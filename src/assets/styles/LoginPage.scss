@@ -1,0 +1,13 @@
+.login-page {
+    .login-form {
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        width: 300px;
+        height: 200px;
+        background-color: #454545;
+        padding: 25px;
+    }
+}

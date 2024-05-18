@@ -1,0 +1,21 @@
+.form-field {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+
+    .error-message {
+        color: rgb(245, 169, 70);
+
+    }
+
+    .label {
+        text-align: left;
+    }
+
+    input {
+        border-radius: 5px;
+        width: 100%;
+        padding: 10px;
+        border: none;
+    }
+}
