@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/swagger/(.*)", "destination": "http://68.183.74.14:4005/swagger/$1" },
+    { "source": "/api/(.*)", "destination": "http://68.183.74.14:4005/api/$1" }
+  ]
+}
