@@ -1,4 +1,8 @@
 .login-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     .login-form {
         border-radius: 12px;
         display: flex;

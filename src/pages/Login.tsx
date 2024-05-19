@@ -26,6 +26,7 @@ const Login = () => {
 
   const handleSubmit = async (values: FormValues, { resetForm }: FormikHelpers<FormValues>) => {
     const { password, username } = values;
+
     const responce = await login(username, password);
 
     if (responce === 200) {

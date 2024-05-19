@@ -1,7 +1,10 @@
 .home-page {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 
     .head {
-      
+        padding: 10px;
         display: flex;
         gap: 10px;
         justify-content: space-between;
@@ -9,5 +12,41 @@
 
     }
 
-    .content {}
+    .content {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .email-form {
+        position: relative;
+    }
+
+    .emails-table {
+        margin-top: 15px;
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+
+        .pagination {
+            margin-top: 15px;
+        }
+
+
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        tr:hover {
+            background-color: #5a5a5af9;
+        }
+    }
+
 }

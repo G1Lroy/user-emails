@@ -10,15 +10,20 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@draft-js-plugins/editor": "^4.1.4",
+    "@draft-js-plugins/static-toolbar": "^4.1.4",
+    "draft-js": "^0.11.7",
+    "draft-js-export-html": "^1.4.1",
     "formik": "^2.4.6",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-router-dom": "^6.23.1",
     "react-toastify": "^10.0.5",
     "sass": "^1.77.2",
     "yup": "^1.4.0"
   },
   "devDependencies": {
+    "@types/draft-js": "^0.11.18",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@typescript-eslint/eslint-plugin": "^7.2.0",

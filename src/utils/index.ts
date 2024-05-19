@@ -1,3 +1,5 @@
+export type LocalUser = { password: string; username: string };
+
 export const parseErrors = (messages: { password: string[]; email: string[]; username: string[] }) => {
   const { email, password, username } = messages;
   let result: string[] = [];
@@ -10,3 +12,12 @@ export const parseErrors = (messages: { password: string[]; email: string[]; use
 };
 
 export const encryptData = (name: string, pass: string) => btoa(`${name}:${pass}`);
+
+export const getLocalUser = (): LocalUser | null => {
+  const storedUser = sessionStorage.getItem("user") || "";
+  if (storedUser) {
+    const { password, username } = JSON.parse(storedUser);
+    return { password, username };
+  }
+  return null;
+};
