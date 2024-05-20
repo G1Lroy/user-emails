@@ -42,8 +42,7 @@ const EmailEditor = ({ onGetValues, disabledCondition }: EmailEditorProps) => {
   const toggleEditor = () => setDisabled(!isEditorDisabled);
   const focus = () => (editor?.current as Editor | null)?.focus?.();
 
-  // при наборе текста использовать кешированую функцию
-  const handleChange = useCallback((state: SetStateAction<EditorState>) => setEditorState(state), []);
+  const handleChange = (state: SetStateAction<EditorState>) => setEditorState(state);
 
   const convertToHTML = () => {
     const contentState = editorState.getCurrentContent();
