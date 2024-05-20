@@ -1,4 +1,4 @@
-import { SetStateAction, memo, useCallback, useRef, useState } from "react";
+import { SetStateAction, memo, useRef, useState } from "react";
 import "draft-js/dist/Draft.css";
 import "./../assets/styles/EmailEditor.scss";
 import Editor, { createEditorStateWithText } from "@draft-js-plugins/editor";
