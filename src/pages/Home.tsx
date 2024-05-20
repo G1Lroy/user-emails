@@ -78,14 +78,15 @@ const Home = () => {
     };
     const response = await sendEmail(formData, localUser!);
 
-    if (response?.ok) {
+    if (response.status === 201) {
       toast.success("Message is send!");
       resetForm();
       // Re render email editor
       setResetNode((prev) => prev + 1);
       setHtmlData("");
       fetchEmails();
-    } else {
+    }
+    if (response.status > 201) {
       toast.warn("Server problems");
     }
   };
